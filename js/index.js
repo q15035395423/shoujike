@@ -12789,19 +12789,16 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                             sizeType: ['original', 'compressed'],
                             sourceType: ['album', 'camera'],
                             success: function (e) {
-                                console.log('我是e',e)
-                                const image = e.tempFilePaths;
-                                console.log('图片路径',e.tempFilePaths)
-                                // wx.getLocalImgData({
-                                //     localData = localData.replace('jgp', 'jpeg'),
-                                //     localId: e.localIds[0], success: function (e) {
-                                //         console.log('asd0',e)
-                                //         if (n) t.imgFinger.el_object.l = t.imgFinger.translateX, document.getElementsByClassName("backgroundImg")[0].style.display = "", t.imgHandler(e.localData); else {
-                                //             var r = e.localData;
-                                //             r = r.replace(/\r\n/g, ""), r = r.replace(/\n/g, ""), r = r.replace(/\s/g, ""), t.imgHandler("data:image/png;base64," + r), t.base_photo_id = ""
-                                //         }
-                                //     }
-                                // })
+                                wx.getLocalImgData({
+                                    localData = localData.replace('jgp', 'jpeg'),
+                                    localId: e.localIds[0], success: function (e) {
+                                        console.log('asd0',e)
+                                        if (n) t.imgFinger.el_object.l = t.imgFinger.translateX, document.getElementsByClassName("backgroundImg")[0].style.display = "", t.imgHandler(e.localData); else {
+                                            var r = e.localData;
+                                            r = r.replace(/\r\n/g, ""), r = r.replace(/\n/g, ""), r = r.replace(/\s/g, ""), t.imgHandler("data:image/png;base64," + r), t.base_photo_id = ""
+                                        }
+                                    }
+                                })
                             }
                         })
                     };
