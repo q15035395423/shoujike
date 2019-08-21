@@ -12790,15 +12790,18 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                             sourceType: ['album', 'camera'],
                             success: function (e) {
                                 console.log('我是e',e)
-                                wx.getLocalImgData({
-                                    localId: e.localIds[0], success: function (e) {
-                                        console.log('asd0',e)
-                                        if (n) t.imgFinger.el_object.l = t.imgFinger.translateX, document.getElementsByClassName("backgroundImg")[0].style.display = "", t.imgHandler(e.localData); else {
-                                            var r = e.localData;
-                                            r = r.replace(/\r\n/g, ""), r = r.replace(/\n/g, ""), r = r.replace(/\s/g, ""), t.imgHandler("data:image/png;base64," + r), t.base_photo_id = ""
-                                        }
-                                    }
-                                })
+                                const image = res.tempFilePaths;
+                                console.log('图片路径',res.tempFilePaths)
+                                // wx.getLocalImgData({
+                                //     localData = localData.replace('jgp', 'jpeg'),
+                                //     localId: e.localIds[0], success: function (e) {
+                                //         console.log('asd0',e)
+                                //         if (n) t.imgFinger.el_object.l = t.imgFinger.translateX, document.getElementsByClassName("backgroundImg")[0].style.display = "", t.imgHandler(e.localData); else {
+                                //             var r = e.localData;
+                                //             r = r.replace(/\r\n/g, ""), r = r.replace(/\n/g, ""), r = r.replace(/\s/g, ""), t.imgHandler("data:image/png;base64," + r), t.base_photo_id = ""
+                                //         }
+                                //     }
+                                // })
                             }
                         })
                     };
