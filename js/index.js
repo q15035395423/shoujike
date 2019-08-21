@@ -12790,7 +12790,6 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                             sourceType: ['album', 'camera'],
                             success: function (e) {
                                 wx.getLocalImgData({
-                                    localData = localData.replace('jgp', 'jpeg'),
                                     localId: e.localIds[0], success: function (e) {
                                         console.log('asd0',e)
                                         if (n) t.imgFinger.el_object.l = t.imgFinger.translateX, document.getElementsByClassName("backgroundImg")[0].style.display = "", t.imgHandler(e.localData); else {
