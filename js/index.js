@@ -12792,7 +12792,7 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                                 console.log('我是e',e)
                                 wx.getLocalImgData({
                                     localId: e.localIds[0], success: function (e) {
-                                        console.log(e)
+                                        console.log('asd0',e)
                                         if (n) t.imgFinger.el_object.l = t.imgFinger.translateX, document.getElementsByClassName("backgroundImg")[0].style.display = "", t.imgHandler(e.localData); else {
                                             var r = e.localData;
                                             r = r.replace(/\r\n/g, ""), r = r.replace(/\n/g, ""), r = r.replace(/\s/g, ""), t.imgHandler("data:image/png;base64," + r), t.base_photo_id = ""
