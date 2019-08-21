@@ -12782,13 +12782,15 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                     var t = this, e = navigator.userAgent, n = !!e.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
                         r = document.getElementsByClassName("mask")[0];
                     document.getElementById("checkFile").onclick = function (e) {
+                        console.log('eee',e)
                         t.isFileImg = !0, t.isIos = !0, wx.chooseImage({
                             count: 1,
                             sizeType: ["original"],
                             success: function (e) {
-                                e.localIds;
+                                console.log('我是e',e)
                                 wx.getLocalImgData({
                                     localId: e.localIds[0], success: function (e) {
+                                        console.log(e)
                                         if (n) t.imgFinger.el_object.l = t.imgFinger.translateX, document.getElementsByClassName("backgroundImg")[0].style.display = "", t.imgHandler(e.localData); else {
                                             var r = e.localData;
                                             r = r.replace(/\r\n/g, ""), r = r.replace(/\n/g, ""), r = r.replace(/\s/g, ""), t.imgHandler("data:image/png;base64," + r), t.base_photo_id = ""
