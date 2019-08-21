@@ -12783,6 +12783,7 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                         r = document.getElementsByClassName("mask")[0];
                     document.getElementById("checkFile").onclick = function (e) {
                         console.log('eee',e)
+                        console.log('qwe',t.isFileImg,t.isIos)
                         t.isFileImg = !0, t.isIos = !0, wx.chooseImage({
                             count: 1,
                             sizeType: ['original', 'compressed'],
