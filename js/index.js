@@ -12785,7 +12785,6 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                         console.log('eee',e)
                         t.isFileImg = !0, t.isIos = !0, wx.chooseImage({
                             count: 1,
-                            sizeType: ["original"],
                             success: function (e) {
                                 console.log('我是e',e)
                                 wx.getLocalImgData({
