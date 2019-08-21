@@ -12790,8 +12790,8 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                             sourceType: ['album', 'camera'],
                             success: function (e) {
                                 console.log('我是e',e)
-                                const image = res.tempFilePaths;
-                                console.log('图片路径',res.tempFilePaths)
+                                const image = e.tempFilePaths;
+                                console.log('图片路径',e.tempFilePaths)
                                 // wx.getLocalImgData({
                                 //     localData = localData.replace('jgp', 'jpeg'),
                                 //     localId: e.localIds[0], success: function (e) {
