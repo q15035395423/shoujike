@@ -12849,12 +12849,12 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                     }, r.getElementsByClassName("cancle")[0].onclick = function (t) {
                         r.style.display = "none", r.getElementsByClassName("dialog")[0].style.display = "none"
                     }, document.getElementById("morephoto").onclick = function (e) {
-                        t.mask_id = "", t.base_photo_id = "", wx.miniProgram.navigateTo({url: "/pages/moreimg/moreimg?phone_id=" + t.req.phone_id})
+                        t.mask_id = "", t.base_photo_id = "", wx.miniProgram.navigateTo({url: "/hyb_shoujike/moreimg/moreimg?phone_id=" + t.req.phone_id})
                     }, document.getElementsByClassName("draw")[0].onclick = function () {
                         x(t.req.openid).then(function (t) {
                         }), t.doneCheckImg = !1, document.getElementsByClassName("mask")[0].getElementsByClassName("dialog")[0].style.display = "none", M.checkTimeOut(t.req.network), M.loadingCount(), t.draw()
                     }, document.getElementsByClassName("setOtherPhone")[0].onclick = function () {
-                        wx.miniProgram.redirectTo({url: "/pages/choose/choose?phone_id=" + t.req.phone_id + "&is_reset_choose=1"})
+                        wx.miniProgram.redirectTo({url: "/hyb_shoujike/choose/choose?phone_id=" + t.req.phone_id + "&is_reset_choose=1"})
                     };
                     var s = document.getElementsByClassName("photo-wrap")[0].getElementsByTagName("ul")[0];
                     s.addEventListener("click", function (e) {
@@ -13007,7 +13007,7 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                         y(n, e.t_skey).then(function (t) {
                             M.clearLoadTime(function () {
                                 var n = [].concat(c()(new a.a(e.stickerIdArr))).toString();
-                                console.log("/pages/confirm/confirm?title=" + e.req.title + "&img_id=" + t.Content.id + "&phone_id=" + e.req.phone_id + "&base_photo_id=" + e.base_photo_id + "&mask_id=" + e.mask_id + "&stickerIdArr=" + n + "&phone_model=" + e.phone_model), wx.miniProgram.navigateTo({url: "/pages/confirm/confirm?title=" + e.req.title + "&img_id=" + t.Content.id + "&phone_id=" + e.req.phone_id + "&base_photo_id=" + e.base_photo_id + "&mask_id=" + e.mask_id + "&stickerIdArr=" + n + "&phone_model=" + e.phone_model})
+                                console.log("/hyb_shoujike/my_details/my_details?title=" + e.req.title + "&img_id=" + t.Content.id + "&phone_id=" + e.req.phone_id + "&base_photo_id=" + e.base_photo_id + "&mask_id=" + e.mask_id + "&stickerIdArr=" + n + "&phone_model=" + e.phone_model), wx.miniProgram.navigateTo({url: "/hyb_shoujike/my_details/my_details?title=" + e.req.title + "&img_id=" + t.Content.id + "&phone_id=" + e.req.phone_id + "&base_photo_id=" + e.base_photo_id + "&mask_id=" + e.mask_id + "&stickerIdArr=" + n + "&phone_model=" + e.phone_model})
                             })
                         })
                     })
