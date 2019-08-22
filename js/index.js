@@ -12783,28 +12783,24 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
                         r = document.getElementsByClassName("mask")[0];
                     document.getElementById("checkFile").onclick = function (e) {
                         t.isFileImg = !0, t.isIos = !0, wx.chooseImage({
-                            count: 1,
-                            sizeType: ['original', 'compressed'],
-                            sourceType: ['album', 'camera'],
-                            success: function (e) {
+                            count:1,
+                            sizeType:["original"],
+                            success:function(e){
+                                e.localIds;
                                 wx.getLocalImgData({
-                                    localId: e.localIds[0].toString(), success: function (res) {
-                                        const localData = res.localData;
-                                        let imageBase64 = '';
-                                        // if (n) t.imgFinger.el_object.l = t.imgFinger.translateX, document.getElementsByClassName("backgroundImg")[0].style.display = "", t.imgHandler(e.localData); else {
-                                        //     var r = e.localData;
-                                        //     r = r.replace(/\r\n/g, ""), r = r.replace(/\n/g, ""), r = r.replace(/\s/g, ""), t.imgHandler("data:image/png;base64," + r), t.base_photo_id = ""
-                                        // }
-                                        if (localData.indexOf('data:image') == 0) {
-                                            //苹果的直接赋值，默认生成'data:image/jpeg;base64,'的头部拼接
-                                            imageBase64 = localData;
-                                          } else {
-                                            //此处是安卓中的唯一得坑！在拼接前需要对localData进行换行符的全局替换
-                                            //此时一个正常的base64图片路径就完美生成赋值到img的src中了
-                                            imageBase64 = 'data:image/jpeg;base64,' + localData.replace(/\n/g, '');
-                                          }
-                                          that.avatarUrl = imageBase64;
-                                          that.handleAvatar(that.dataURLtoBlob(imageBase64));
+                                    localId:e.localIds[0],
+                                    success:function(e){
+                                        if(n)t.imgFinger.el_object.l=t.imgFinger.translateX,
+                                        document.getElementsByClassName("backgroundImg")[0].style.left="0px",
+                                        t.imgHandler(e.localData);
+                                        else{
+                                            var r=e.localData;
+                                            r=r.replace(/\r\n/g,""),
+                                            r=r.replace(/\n/g,""),
+                                            r=r.replace(/\s/g,""),
+                                            t.imgHandler("data:image/png;base64,"+r),
+                                            t.base_photo_id=""
+                                        }
                                     }
                                 })
                             }
