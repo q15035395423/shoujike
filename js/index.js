@@ -334,7 +334,7 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
     }), n.d(e, "requestTextSticker", function () {
         return y
     });
-    var r = n(93), i = "https://www.webstrongtech.net/app/index.php?i=9&c=entry&a=wxapp&do=upload&m=shuidian", o = function (t, e) {
+    var r = n(93), i = "https://casing.szsszykj.com/index.php?m=Api&", o = function (t, e) {
         return Object(r.a)(i + "c=Phone&a=getPhoneDetail", {id: t}, "post")
     }, a = function (t, e) {
         return Object(r.a)(i + "c=order&a=saveUserImg", t, "post")
