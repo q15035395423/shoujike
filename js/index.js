@@ -361,7 +361,7 @@ webpackJsonp([0, 1, 2], [function (t, e, n) {
     }, v = function (t) {
         return Object(r.a)(i + "c=Phone&a=maskByTag", {}, "post")
     }, y = function (t) {
-        return Object(r.a)(i + "c=Phone&a=wordToImage", t, "post")
+        return Object(r.a)("https://www.webstrongtech.net/app/index.php?i=9&c=entry&a=wxapp&do=upload&m=shuidian" + "c=Phone&a=wordToImage", t, "post")
     }
 }, function (t, e, n) {
     var r = n(18)("meta"), i = n(8), o = n(9), a = n(4).f, s = 0, c = Object.isExtensible || function () {
